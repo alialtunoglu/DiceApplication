@@ -1,0 +1,31 @@
+/****************************************************************************
+;   Program Adý    : ZarApplication/main.c                                  *
+;   Programýn amacý : Bu program elektronik zar olarak çalýþmaktadýr.       *
+;   Yazan         : Ali Altunoðlu                                           *
+;   Tarih         : 25-04-2023                                              *
+*****************************************************************************/
+#include <main.h>
+#include <stdlib.h>
+
+
+
+int sayi;
+int dizi[7]={0x00,0x08,0x22,0x2a,0x63,0x6b,0x77};
+
+
+
+void  main(void)
+{
+   set_tris_c(0x00);
+   set_tris_d(0x00);
+   output_c(0x00);
+   output_d(0x00);
+  
+  while(TRUE){
+   sayi=1+rand()%6;
+   output_c(dizi[sayi]);
+   sayi=1+rand()%6;
+   output_d(dizi[sayi]);
+   delay_ms(1000);
+  }
+}

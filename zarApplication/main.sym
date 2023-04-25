@@ -1,0 +1,90 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-005 strtok.save
+006-009 _Randseed
+00A     sayi
+00B-011 dizi
+012-015 @MUL3232.P1
+012     rand.@SCRATCH1
+012     MAIN.@SCRATCH1
+013     @delay_ms1.P1
+013     rand.@SCRATCH2
+013     MAIN.@SCRATCH2
+014     rand.@SCRATCH3
+015-016 @DIV1616.P1
+015     rand.@SCRATCH4
+016-019 @MUL3232.P1
+017-018 @DIV1616.P1
+019     @DIV1616.@SCRATCH1
+01A     @MUL3232.@SCRATCH1
+01B     @MUL3232.@SCRATCH2
+01C     @MUL3232.@SCRATCH3
+01D     @MUL3232.@SCRATCH4
+01E     @MUL3232.@SCRATCH5
+01F     @MUL3232.@SCRATCH6
+F83     PSP_DATA
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @MUL3232
+00005A  @DIV1616
+00009C  rand
+000104  @delay_ms1
+00012E  @cinit1
+00012E  MAIN
+00013E  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\alial\Desktop\PIC\zarApplication\
+
+Project Files:
+    main.c                                                  [25-Nis-23 09:03  CRC=40A9F6BE]
+    ..\..\Lessons\MikroIslemciDeneme\ders8zar\main.h        [01-Nis-23 15:38  CRC=F216784F]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\18F452.h [12-Kas-13 14:35  CRC=1418FEBC]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [08-Haz-11 14:39  CRC=0B6669CF]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-Tem-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [14-Tem-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-Oca-08 13:55  CRC=2D1F019F]
+
+Source signature=59E8B3D1
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F452
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
