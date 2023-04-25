@@ -1,0 +1,24 @@
+#include <main.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int sayi;
+
+int dizi[6]={0x01,0x03,0x07,0x0f,0x1f,0x3f};
+int  main(void)
+{
+   set_tris_c(0x00);
+   set_tris_d(0x00);
+   output_c(0x00);
+   output_d(0x00);
+   
+   srand(1);
+   sayi=1+rand()%6;
+  // sayi=5;
+   
+   output_c(dizi[sayi-1]);
+   output_d(dizi[sayi-1]);
+   
+   return 0;
+}
